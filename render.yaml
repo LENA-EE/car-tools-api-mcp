@@ -7,8 +7,10 @@ services:
     envVars:
       - key: DATABASE_URL
         sync: false
+      - key: OPENROUTER_API_KEY
+        sync: false
       - key: NODE_ENV
         value: production
       - key: FNP_MOCK
-        value: "false"
+        value: "true"
     healthCheckPath: /health
